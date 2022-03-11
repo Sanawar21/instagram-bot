@@ -1,0 +1,43 @@
+scrap accounts in the concerned field(s)
+
+make the find accounts function more "Robust"
+
+backup the accounts to all_accounts.txt
+Note: keep the daily following under 200
+run in sessions:
+make databases instead of text files
+
+Scraping session--:
+  if file blank or status 0
+  optional if more followers wanted
+  mandatory if the program is being run for the first time
+  get pages
+  scrape accounts from pages
+  add pages to all accounts
+
+Session 1--:
+status is 1:
+  follow the pages
+  useless = []
+  requested = []
+  followed = []
+  load all accounts from all_accounts
+  remove those accounts which were recently interacted with
+  follow all accounts such that:
+    if the functions returns True: append to followed
+    elif returns False: useless
+    elif None: append to requested
+  make backups of all three in the concerned files
+  change status to 2
+
+Session 2--:
+  Checking followbacks:
+  recently unfollowed = []
+  get own followers and followings.
+  get accounts in followings but not in followers and account not in pages  
+    account.unfollow and unfollowed.append account
+  get requested
+    urequest
+    recently unfollowed.append
+  change status to 0
+
