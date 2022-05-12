@@ -20,10 +20,7 @@ if __name__ == '__main__':
 
   # accounts = functions.read_backup('C:\\Users\\TOSHIBA\\Desktop\\instabot\\all_accounts.txt')
   # accounts = accounts[:10]
-  # instagram.follow_account('miakhalifa', unconditionally=True)
-  # instagram.follow_account('_umair_qureshi516')
   
-  # followed = ['miakhalifa']
   # requested = ['_umair_qureshi516']
   # useless = []
   
